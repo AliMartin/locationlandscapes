@@ -1,0 +1,65 @@
+/*
+ * Mmenu
+ */
+
+
+#mm-blocker {
+  background: #000 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80); }
+
+
+.mmenu-nav.mm-basic {
+    background-color: rgba(255, 255, 255, 1);
+    text-shadow: inherit;
+}
+
+li.mmenu-expanded,
+#mmenu_right i {
+	display: none;
+}
+
+.mmenu-nav.mm-basic > .mm-header .mm-title {
+    width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-decoration: none;
+	padding: 0;
+}
+
+.mmenu-nav.mm-basic > .mm-header {
+	padding: 0 10px;
+	background: inherit;
+	background-color: #6B6e56;
+	color: #fff;
+	border-bottom: inherit;
+}
+
+.mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults)::after {
+    border-bottom-style: none;
+}
+
+.mmenu-nav.mm-basic > .mm-list li {
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 18px;
+	line-height: 22px;
+    border-bottom: none;
+    border-top: inherit;
+}
+
+.mmenu-nav.mm-basic > .mm-list i {
+	display: none;
+}
+
+.mmenu-nav.mm-basic > .mm-list li > a:not(.mm-subopen):not(.mm-subclose):not(.mm-fullsubopen) {
+    padding: 15px 20px;
+}
+
+.mmenu-nav.mm-basic > .mm-footer {
+    background-color: #6B6e56;
+    color: #fff;
+
+}

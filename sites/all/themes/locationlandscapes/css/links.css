@@ -1,0 +1,68 @@
+/**
+ * Theming for buttons and body links.
+ */
+
+.btn,
+.btn:visited {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	display: inline-block;
+	min-width: 140px;
+	font-size: 14px;
+	line-height: 34px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    padding: 0 18px;
+	border-radius: 18px; 
+	-webkit-border-radius: 18px; 
+	-moz-border-radius: 18px;
+	border: 1px solid #5d6266;
+	background-color: #fff;
+	color: #5d6266;
+	letter-spacing: 1px;
+}
+
+.btn a,
+.btn a:hover,
+.btn a:focus,
+.btn a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+	border: 1px solid #a0a374;
+	background-color: #fff;
+	color: #a0a374;
+    box-shadow: inherit;
+}
+
+.btn:active {
+	border: 1px solid #a0a374;
+	background-color: #a0a374;
+	color: #fff;
+    box-shadow: inherit;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn.active.focus {
+    outline: inherit;
+    outline-offset: inherit;
+}
+
+a,
+a:visited {
+	color: #a0a374;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #a0a374;
+	text-decoration: underline;
+}

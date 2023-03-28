@@ -1,0 +1,188 @@
+/**
+ * General theming.
+ */
+
+body.front #navbar-superheader-wrapper {
+	background-color: rgba(93,98,102,1);
+	-webkit-box-shadow: 	0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:    	0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:         	0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+body.front #header-wrapper {
+	background-color: rgba(0,0,0,0.4);
+}
+
+body.front {
+	color: #dcdedd;
+}
+
+body.front h1.page-header,
+body.front .field-name-title,
+body.front #block-system-main {
+	display: none;
+}
+
+body.front .main-container > .row > section {
+	padding-bottom: 90px;
+}
+
+body.front h2.block-title {
+	text-align: center;
+}
+
+body.front .content-wrapper {
+	-moz-border-radius:		10px 10px 0 0;
+	-webkit-border-radius: 	10px 10px 0 0;
+	border-radius: 			10px 10px 0 0;
+}
+
+.welcome-text {
+	margin-top: 500px; /* This needs to change for different screen sizes */
+	text-align: center;
+}
+
+.front-page-block {
+	background-color: rgba(93,98,102,0.9);
+	padding: 0 30px 30px 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width : 767px) {
+	body.front .front-page-block {width: 100%;}
+	.welcome-text {margin-top: 370px;}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1199px) {
+	body.front .front-page-block {width: 800px;}
+	.welcome-text {margin-top: 480px;}
+}
+
+@media only screen and (min-width : 1200px) {
+	body.front .front-page-block {width: 1000px;}
+	.welcome-text {margin-top: 480px;}
+}
+
+
+
+/*
+ * Testimonial
+ */
+
+.view-front-page-testimonials {
+	text-align: center;
+	padding: 30px;
+	background-color: rgba(93,98,102,0.6);
+	border: 1px #555 solid;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.view-front-page-testimonials .views-field-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.3;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.view-front-page-testimonials:before {
+	content: "\f10d";
+    font-family: 'FontAwesome';
+    font-size: 92px;
+    font-weight: 400;
+    color: #a9ae87;
+    opacity: 0.2;
+	display: inline-block;
+	float: left;
+	width: 0;
+	position: relative;
+	top: 15px;
+	left: -5px;
+}
+
+
+
+/*
+ * Featured gardens block
+ */
+
+
+#block-views-front-page-garden-list-block.front-page-block {
+	padding: 0 15px 30px 15px;
+}
+
+.view-front-page-garden-list .owl-item {
+	padding: 15px;
+}
+
+.view-front-page-garden-list .view-footer {
+	text-align: center;
+}
+
+
+
+/*
+ * Instagram / News block
+ */
+
+#block-views-front-page-instagram-block-1 h2 {
+	margin-bottom: 25px;
+}
+
+.view-front-page-instagram .views-field-images {
+	max-width: 200px;
+	margin-right: 30px;
+	float: left;
+}
+
+.view-front-page-instagram .views-field-nothing {
+	overflow: hidden;
+}
+
+.view-front-page-instagram h3 {
+	margin-top: 0;
+}
+
+.view-front-page-instagram .views-field-caption,
+.view-front-page-instagram .drupagram-likes {
+	margin-bottom: 10px;
+}
+
+.view-front-page-instagram .drupagram-likes-count-label {
+	display: none;
+}
+
+.view-front-page-instagram .drupagram-likes-count-value {
+	display: inline-block;
+}
+
+.view-front-page-instagram .drupagram-likes-count-value::before {
+	content: "\F004";
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    font-weight: 400;
+    color: #a9ae87;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+	width: 15px;
+}
+
+@media only screen and (max-width : 767px) {
+	.view-front-page-instagram .views-field-images {
+		max-width: inherit;
+		float: inherit;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.view-front-page-instagram .views-field-images img {
+		width: 100%;
+	}
+	.view-front-page-instagram {
+		text-align: center;
+	}
+}
